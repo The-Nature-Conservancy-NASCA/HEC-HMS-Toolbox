@@ -17,14 +17,6 @@ function [Fig, Params,bestf,allbest,allEvals] = Calibration_HEC_HMS(Model, Name_
 % http://www.gnu.org/licenses/.
 %
 % -------------------------------------------------------------------------
-% Proyecto
-%--------------------------------------------------------------------------
-% Consultor�a t�cnica para el an�lisis de la cuenca alta y propuesta de 
-% medidas de conservaci�n que contribuyan a la resiliencia de la cuenca del
-% r�o Juan D�az en ciudad de Panam� para la mitigaci�n del riesgo por 
-% inundaci�n
-%
-% -------------------------------------------------------------------------
 % Descripci�n del Codigo
 % -------------------------------------------------------------------------
 %
