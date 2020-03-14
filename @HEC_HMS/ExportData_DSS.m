@@ -40,7 +40,14 @@ function ExportData_DSS(Model, PathExport, NameFile1, A, B, C, D, E, F)
 % -------------------------------------------------------------------------
 % Output Data
 % -------------------------------------------------------------------------
-%
+% PathExport	=
+% NameFile1		=
+% A				=
+% B				=
+% C				=
+% D				=
+% E				=
+% F				=
 
 %% Create Folder Export run
 mkdir( PathExport )

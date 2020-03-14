@@ -23,11 +23,19 @@ function [Fig, Params,bestf,allbest,allEvals] = Calibration_HEC_HMS(Model, Name_
 % -------------------------------------------------------------------------
 % Input Data
 % -------------------------------------------------------------------------
-% 
+% Name_Output 		= 
+% NameEvents_Cal	=
+% Qobs				=
+% MaxIter			=
+% ComplexSize		=
 % -------------------------------------------------------------------------
 % Output Data
 % -------------------------------------------------------------------------
-%
+% Fig				=
+% Params			=
+% bestf				=
+% allbest			=
+% allEvals			=
             
 %% 
 % Output Flow 

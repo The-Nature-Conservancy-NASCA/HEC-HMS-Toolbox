@@ -1,13 +1,14 @@
 function [bestx,bestf,allbest,allEvals] = sce(Model,x0,bl,bu,ngs) 
 %        [bestx,bestf,allbest,allEvals] = sce(fctname,x0,bl,bu,ngs,userdata)
-%
+% 
 % Shuffled Complex Evolution (SCE-UA) METHOD
 %
 % written (MATLAB)  by Q.Duan   09.2004
 % sligthly modified by F.Anctil 01.2009
 % lhs initialisation and parallel version by D.Brochero 10.2015
-%
+%%--------------------------------------------------------------------------
 % INPUTS
+%--------------------------------------------------------------------------
 %  fctname = character string of the function to optimize
 %  x0      = the initial parameter array at the start;
 %          = the optimized parameter array at the end;
@@ -15,24 +16,24 @@ function [bestx,bestf,allbest,allEvals] = sce(Model,x0,bl,bu,ngs)
 %  bu      = the upper bound of the parameters
 %  ngs     = number of complexes (sub-pop.)- between 2 and 20
 %  userdata (optional) - for the function to optimize
-%
+%--------------------------------------------------------------------------
 %%% FA modifications
-%
+%--------------------------------------------------------------------------
 % 0. commented unused command lines
 % 1. reduced the number of inputs by preselection
 % 2. add the function name (to be optimized) to the input list
 % 3. allow userdata to be passed to that function
 % 4. keep track of each loop best f and x, and of number of trials
-% 
+%--------------------------------------------------------------------------
 % DB modifications
-%
+%--------------------------------------------------------------------------
 % 0. parallel version of complex evaluations
 % 1. options to change directly algorithm parameters 
 % 2. default parameters if they are not defined
 % 3. LHS initialisation of points
 % 4. initial population (x0) is correctly included if it is defined
 % 5. stop for convergency is fixed by including a return command
-%
+%--------------------------------------------------------------------------
 % % PRESELECTED INPUTS (by FA according to the recommendation of Duan)
 % %
 % maxn   = 10000 ;
@@ -79,7 +80,7 @@ function [bestx,bestf,allbest,allEvals] = sce(Model,x0,bl,bu,ngs)
 %
 % 
 % TODO: generate exemple and readme file to share easily this function
-
+%--------------------------------------------------------------------------
 % PRESELECTED INPUTS (by FA according to the recommendation of Duan)
 %  ngs     = number of complexes (sub-pop.)- between 2 and 20
 %  npg     = number of members in a complex
